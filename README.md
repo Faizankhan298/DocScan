@@ -29,27 +29,40 @@ A self-contained document scanning and matching system with a built-in credit sy
 ## 📁 Project Structure
 
 ```
-/DocScan2
-├── /backend                 # Server-side code
-│   ├── /controllers         # Request handlers
-│   ├── /middleware          # Auth & validation middleware
-│   ├── /models              # Data models
-│   ├── /routes              # API routes
-│   └── server.js            # Entry point
-├── /frontend                # Client-side code
-│   ├── /css                 # Stylesheets
-│   ├── /js                  # JavaScript files
-│   └── /views               # HTML templates
-├── /data                    # Local storage
-│   ├── /documents           # Uploaded documents
-│   ├── /users.json          # User database
-│   └── /scans.json          # Scan history
-├── /utils                   # Utility functions
-│   ├── auth.js              # Authentication helpers
-│   ├── credits.js           # Credit management
-│   └── textMatch.js         # Document similarity algorithms
-├── package.json             # Dependencies
-└── README.md                # Documentation
+/DocScan
+├── /assets                     # Images
+│
+├── /database                   # JSON Data Storage
+│   ├── creditRequests.json     # credit request
+│   ├── scans.json              # scans
+│   ├── system_logs.json        # system logs
+│   └── users.json              # userserver
+│
+├── /frontend                   # Client-side code
+│   ├── app.js                  # JavaScript files
+│   ├── index.html              # HTML templates
+│   └── styles.css              # Stylesheets
+│
+├── /routes                     # Routes
+│   ├── admin.js                # admin routes
+│   ├── auth.js                 # auth routes
+│   ├── credits.js              # credits routes
+│   ├── scan.js                 # scan routes
+│   └── user.js                 # user routes
+│
+├── /stored_documents           # Stored Documents
+│
+├── /uploaded_documents         # Uploaded Documents
+│
+├── /utils                      # Utility Functions
+│   ├── creditReset.js          # Credit Utility Function
+│   ├── hash.js                 # Hash Utility Function
+│   └── textMatch.js            # Text Match Algorithms Utility Function
+│
+├── package-lock.json           # Peer-Dependencies
+├── package.json                # Dependencies
+└── README.md                   # Documentation
+└── server.js                   # Server
 ```
 
 ## 💻 Tech Stack
@@ -103,6 +116,43 @@ Documents are stored locally and indexed for faster retrieval and comparison.
 - 🛡️ Session-based authentication
 - 🚦 Role-based access control
 - ✅ Input validation and sanitization
+
+## Images
+
+1. Register Page: (For Users)
+   ![Image](./assets/1.png)
+
+2. Home Page:
+   ![Image](./assets/2.png)
+
+3. Upload Document to Scan:
+   ![Image](./assets/3.png)
+
+4. Processing:
+   ![Image](./assets/4.png)
+
+5. Result:
+   ![Image](./assets/5.png)
+
+6. Credit Request:
+   ![Image](./assets/6.png)
+
+7. Sucess Message:
+   ![Image](./assets/7.png)
+
+8. Login Page:
+   ![Image](./assets/8.png)
+
+9. Admin Page:
+   ![Image](./assets/9.png)
+
+10. Dashboard:
+    ![Image](./assets/10.png)
+
+11. Same Algorithm Results (Chat gpt, Gemini, Per, Perplexity):
+    ![Image](./assets/11.png)
+    ![Image](./assets/12.png)
+    ![Image](./assets/13.png)
 
 ## 🧪 Testing
 
