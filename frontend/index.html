@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocScan - Document Scanning and Matching System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DocScan</h1>
+        <nav id="main-nav">
+          <div class="nav-links">
+            <!-- Navigation links will be added dynamically based on user role -->
+          </div>
+          <div class="user-info">
+            <!-- User info will be shown here when logged in -->
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Auth section (login/register) -->
+        <section id="auth-section" class="section">
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="register">Register</button>
+          </div>
+
+          <div class="tab-content active" id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+              <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required />
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required />
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+
+          <div class="tab-content" id="register">
+            <h2>Register</h2>
+            <form id="register-form">
+              <div class="form-group">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" required />
+              </div>
+              <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required />
+              </div>
+              <div class="form-group">
+                <label for="register-confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  id="register-confirm-password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Dashboard section (shown after login) -->
+        <section id="dashboard-section" class="section hidden">
+          <div class="dashboard-container">
+            <!-- User dashboard -->
+            <div id="user-dashboard" class="dashboard hidden">
+              <div class="credit-info">
+                <h3>Your Credits</h3>
+                <div class="credit-count" id="user-credits">20</div>
+                <button id="request-credits-btn" class="  btn btn-primary">
+                  Request More Credits
+                </button>
+              </div>
+
+              <div class="scan-section">
+                <h3>Scan Document</h3>
+                <form id="scan-form">
+                  <div class="form-group">
+                    <label for="document-upload"
+                      >Upload Document (TXT or PDF)</label
+                    >
+                    <input
+                      type="file"
+                      id="document-upload"
+                      accept=".txt,.pdf"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Scan Document
+                  </button>
+                </form>
+              </div>
+
+              <div class="scan-results hidden" id="scan-results">
+                <h3>Scan Results</h3>
+                <div class="results-container" id="results-container">
+                  <!-- Results will be populated here -->
+                </div>
+              </div>
+
+              <div class="scan-history">
+                <h3>Your Scan History</h3>
+                <div class="history-list" id="scan-history-list">
+                  <!-- History will be populated here -->
+                </div>
+                <button id="export-history-btn" class="btn btn-secondary">
+                  Export History
+                </button>
+              </div>
+
+              <div class="credit-requests">
+                <h3>Credit Requests</h3>
+                <div class="requests-list" id="credit-requests-list">
+                  <!-- Requests will be populated here -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Admin dashboard -->
+            <div id="admin-dashboard" class="dashboard hidden">
+              <h2>Admin Dashboard</h2>
+
+              <div class="admin-section">
+                <h3>Analytics Overview</h3>
+                <div class="analytics-grid" id="analytics-grid">
+                  <!-- Analytics data will be populated here -->
+                </div>
+              </div>
+
+              <div class="admin-section">
+                <h3>Pending Credit Requests</h3>
+                <div class="credit-requests-table" id="admin-credit-requests">
+                  <!-- Credit requests will be populated here -->
+                </div>
+              </div>
+
+              <div class="admin-section">
+                <h3>User Management</h3>
+                <div class="users-table" id="users-table">
+                  <!-- Users will be populated here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Request credits modal -->
+        <div class="modal" id="request-credits-modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Request Additional Credits</h2>
+            <form id="credit-request-form">
+              <div class="form-group">
+                <label for="credits-amount">Amount of Credits</label>
+                <input
+                  type="number"
+                  id="credits-amount"
+                  min="1"
+                  max="100"
+                  value="10"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="credits-reason">Reason for Request</label>
+                <textarea
+                  id="credits-reason"
+                  rows="3"
+                  placeholder="Please explain why you need additional credits..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 DocScan - Document Scanning and Matching System</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

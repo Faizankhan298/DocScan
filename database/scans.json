@@ -1,0 +1,52 @@
+{
+  "scans": [
+    {
+      "id": "scan-1741111445019",
+      "userId": "user-1741111350868",
+      "documentName": "5 Editorial Designing a Protocol Adopting an Artificial Intelligence (AI)âDriven Approach for Early Diagnosis of Late-Onset Alzheimerâs Disease.pdf",
+      "timestamp": "2025-03-04T18:04:05.020Z",
+      "matches": [
+        {
+          "filename": "5 Editorial Designing a Protocol Adopting an Artificial Intelligence (AI)–Driven Approach for Early Diagnosis of Late-Onset Alzheimer’s Disease.pdf",
+          "similarity": "1.00"
+        },
+        {
+          "filename": "1 A multilayer multimodal detection and prediction model based.pdf",
+          "similarity": "0.89"
+        },
+        {
+          "filename": "6 Artificial Intelligence for Alzheimer’s Disease Promise or Challenge.pdf",
+          "similarity": "0.89"
+        },
+        {
+          "filename": "3 Ethical Implications of Alzheimer’s Disease Prediction in Asymptomatic Individuals through Artificial Intelligence.pdf",
+          "similarity": "0.87"
+        },
+        {
+          "filename": "4 Detecting Alzheimer’s disease using machine learning.pdf",
+          "similarity": "0.86"
+        },
+        {
+          "filename": "10 DEMNET_A_Deep_Learning_Model_for_Early_Diagnosis_of_Alzheimer_Diseases_and_Dementia_From_MR_Images.pdf",
+          "similarity": "0.84"
+        },
+        {
+          "filename": "8 Single and Combined Neuroimaging Techniques for Alzheimer’sDisease Detection.pdf",
+          "similarity": "0.82"
+        },
+        {
+          "filename": "7 A Novel AI-Based System for Detection and Severity Prediction of Dementia Using MRI.pdf",
+          "similarity": "0.81"
+        },
+        {
+          "filename": "9 Artificial intelligence and leukocyte epigenomics.pdf",
+          "similarity": "0.78"
+        },
+        {
+          "filename": "2 Application of Artificial Intelligence in the Prevention, Diagnosis and Treatment of Alzheimer’s Disease.pdf",
+          "similarity": "0.76"
+        }
+      ]
+    }
+  ]
+}

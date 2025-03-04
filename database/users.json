@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "admin-1684224000000",
+      "username": "admin",
+      "password": "c18d04c0aec4377174bea8d8b3aa554c251c64ce50a7e76528349c77e2f79671cd16e59482933b116813448e85c5b1b6422a502ce2505d9a5388a7863ad6fa5a",
+      "salt": "eb61fdb880742c5cccec0a2bda6736ec",
+      "role": "admin",
+      "credits": 999999,
+      "createdAt": "2023-05-16T12:00:00.000Z"
+    },
+    {
+      "id": "user-1741111350868",
+      "username": "Faizan",
+      "password": "d0b6f3aabe34ee8485a01446c693e4bef982ef73e02590ac3f26b6ac17deab4f6a23ca4099e026a2720184d2029318dfbbb9ad71300ca12ba0296640218622a4",
+      "salt": "139b7e65be40959b2a696eca42fa114f",
+      "role": "user",
+      "credits": 19,
+      "createdAt": "2025-03-04T18:02:30.868Z"
+    }
+  ]
+}

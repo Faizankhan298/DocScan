@@ -1,0 +1,15 @@
+{
+  "requests": [
+    {
+      "id": "req-1741111516143",
+      "userId": "user-1741111350868",
+      "username": "Faizan",
+      "amount": 10,
+      "reason": "Please my credit is empty",
+      "status": "pending",
+      "requestDate": "2025-03-04T18:05:16.143Z",
+      "responseDate": null,
+      "adminResponse": null
+    }
+  ]
+}
